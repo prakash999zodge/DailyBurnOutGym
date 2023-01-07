@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness center</title>
+</head>
+<style>
+    body {
+
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('GYM.jpg');
+
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+
+    .left img {
+        width: 95px;
+        height: 99px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: auto;
+        margin-top: 20px;
+        /* border: 2px solid black; */
+        /* display: inline-block; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+        font-size: 19px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: blue;
+
+    }
+    .btn{
+        margin: 8px;
+        background-color: black;
+        color: white;
+        padding: 4px;
+        border: 2px grey;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        /* border: 2px solid greenyellow; */
+        margin: 117px;
+        padding: 31px;
+        width: 33%;
+        border-radius: 21px;
+    }
+    .form-group input{
+        text-align: center;
+        display:block;
+        width: 299px;
+        padding: 6px;
+        border-radius: 9px;
+        /* margin: 2px; */
+        margin: 13px auto;
+        font-size: 23px;
+    } 
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 54%;
+        margin: 14px auto;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="2.png" alt="">
+            <div>Fitness center</div>
+        </div>
+
+        <!-- mid box for nevigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- right box for for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of aurangabad</h1>
+
+        <div class="form-group">
+        
+            <input type="text" name="" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+        
+            <input type="text" name="" placeholder="Enter your Age">
+		<form>
+			<select name="Age">
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+			</select>
+			Male <input type="radio" name="gender">
+			Female <input type="radio" name="gender">
+		</form>
+
+        </div>
+
+        <div class="form-group">
+        
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+
+        <div class="form-group">
+        
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+
+    </div>
+</body>
+
+</html>
